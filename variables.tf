@@ -56,7 +56,7 @@ variable "allocation_method" {
 
 variable "zones" {
   type    = list(string)
-  default = []
+  default = ["1", "2", "3"]
 }
 
 variable "instance_index" {
