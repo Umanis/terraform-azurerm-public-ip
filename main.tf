@@ -28,7 +28,7 @@ resource "azurerm_public_ip" "self" {
   resource_group_name = data.azurerm_resource_group.parent_group.name
   location            = data.azurerm_resource_group.parent_group.location
   allocation_method   = var.allocation_method
-  availability_zone   = var.availability_zone
+  zones               = var.zones
   sku_tier            = var.sku_tier
   sku                 = var.sku
 

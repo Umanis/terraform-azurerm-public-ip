@@ -54,9 +54,9 @@ variable "allocation_method" {
   default = "Static"
 }
 
-variable "availability_zone" {
-  type    = string
-  default = "Zone-Redundant"
+variable "zones" {
+  type    = list(string)
+  default = []
 }
 
 variable "instance_index" {
